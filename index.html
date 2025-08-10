@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS ONE - Giải Pháp Quản Lý Kinh Doanh</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts (Inter) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="POS ONE - Phần mềm quản lý nhà hàng, quán cafe, bán lẻ: quản lý bán hàng, kho, nhân sự, hóa đơn điện tử & thanh toán online."
+    />
+    <meta
+      name="keywords"
+      content="pos one, phần mềm pos, quản lý nhà hàng, hóa đơn điện tử, thanh toán online"
+    />
+    <meta
+      property="og:title"
+      content="POS ONE - Giải Pháp Quản Lý Kinh Doanh"
+    />
+    <meta
+      property="og:description"
+      content="Tự động hóa vận hành - Bán hàng đa thiết bị - Ưu đãi lớn khi đăng ký."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta
+      property="og:image"
+      content="https://posone.ai/wp-content/uploads/2025/06/One-Green-no-backg-1-768x546.png"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "POS ONE",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, Android, iOS",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "VND" }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <header
+      class="topbar d-none d-lg-block py-1 small"
+      style="background: linear-gradient(90deg, #28a745, #0c8131); color: #fff"
+    >
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <i class="fa-solid fa-headset me-1"></i> Hỗ trợ: 1900 2137 • Email:
+          kas@kas.asia
+        </div>
+        <div class="d-flex gap-2 align-items-center">
+          <button
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="Đổi giao diện"
+          >
+            <i class="fa-solid fa-moon"></i><span>Dark</span>
+          </button>
+          <a href="#register" class="btn btn-sm btn-outline-light px-3"
+            >Dùng Thử</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img
+            src="https://posone.ai/wp-content/uploads/2025/06/One-Green-no-backg-1-768x546.png"
+            alt="POS ONE"
+            height="40"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Trang Chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Tính Năng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#benefits">Lợi Ích</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Ưu Đãi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Liên Hệ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stats">Số Liệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Khách Hàng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-primary text-white px-3 ms-lg-3"
+                href="#register"
+                >Đăng Ký</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                <span class="gradient-text">POS ONE</span><br />
+                Giải Pháp Quản Lý Kinh Doanh
+              </h1>
+              <p class="hero-subtitle">
+                Phần mềm quản lý nhà hàng toàn diện - Tự động hóa các hoạt động
+                vận hành, quản lý đặt bàn, theo dõi đơn hàng, tính tiền và phân
+                tích doanh thu một cách hiệu quả.
+              </p>
+              <div class="hero-buttons">
+                <a href="#register" class="btn btn-primary btn-lg me-3">
+                  <i class="fas fa-rocket me-2"></i>Đăng Ký Ngay
+                </a>
+                <a href="#features" class="btn btn-outline-primary btn-lg">
+                  <i class="fas fa-play me-2"></i>Tìm Hiểu Thêm
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+            <div class="hero-image">
+              <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="POS System"
+                class="img-fluid rounded-3 shadow-lg"
+              />
+              <div
+                class="floating-card"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <i class="fas fa-chart-line text-success"></i>
+                <span>+150% Doanh Thu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">Tính Năng Nổi Bật</h2>
+            <p class="section-subtitle">
+              POS ONE cung cấp đầy đủ các tính năng quản lý hiện đại
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4>Quản Lý Nhân Viên</h4>
+              <p>
+                Theo dõi ca làm việc, hiệu suất và quản lý lương thưởng một cách
+                hiệu quả.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-warehouse"></i>
+              </div>
+              <h4>Quản Lý Kho Hàng</h4>
+              <p>
+                Kiểm soát nhập xuất, tồn kho và nguyên liệu một cách chính xác.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <h4>Báo Cáo & Hóa Đơn</h4>
+              <p>
+                Tạo báo cáo doanh thu chi tiết và quản lý hóa đơn điện tử theo
+                nghị định.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-table"></i>
+              </div>
+              <h4>Quản Lý Bàn</h4>
+              <p>
+                Theo dõi trạng thái bàn và xử lý thanh toán nhanh chóng, tiện
+                lợi.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <h4>Quản Lý Menu</h4>
+              <p>
+                Tạo và cập nhật menu món ăn dễ dàng với giao diện trực quan.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-credit-card"></i>
+              </div>
+              <h4>Thanh Toán Online</h4>
+              <p>
+                Hỗ trợ đa dạng hình thức thanh toán online tiện lợi và an toàn.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="benefits-content">
+              <h2 class="section-title">Vận Hành Trên Mọi Thiết Bị</h2>
+              <p class="mb-4">
+                POS ONE được xây dựng trên nền tảng Web base và Application, cho
+                phép ứng dụng hoạt động trên mọi thiết bị mà bạn muốn sử dụng.
+              </p>
+
+              <div class="benefit-list">
+                <div class="benefit-item">
+                  <i class="fas fa-mobile-alt text-primary"></i>
+                  <div>
+                    <h5>Smartphone & Mobile</h5>
+                    <p>Bán hàng mọi lúc mọi nơi với smartphone</p>
+                  </div>
+                </div>
+
+                <div class="benefit-item">
+                  <i class="fas fa-tablet-alt text-primary"></i>
+                  <div>
+                    <h5>Tablet & POS</h5>
+                    <p>Giao diện tối ưu cho máy tính bảng</p>
+                  </div>
+                </div>
+
+                <div class="benefit-item">
+                  <i class="fas fa-desktop text-primary"></i>
+                  <div>
+                    <h5>Desktop</h5>
+                    <p>Quản lý toàn diện trên máy tính</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="benefits-image">
+              <img
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Multi Device"
+                class="img-fluid rounded-3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">POS ONE Đồng Hành Cùng Bạn</h2>
+            <p class="section-subtitle">
+              Những lý do khiến khách hàng tin tưởng lựa chọn POS ONE
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="why-card">
+              <div class="why-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h4>Nhanh Chóng</h4>
+              <p>Đăng ký và triển khai nhanh chóng, sử dụng ngay trong ngày</p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="why-card">
+              <div class="why-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h4>Tiện Lợi</h4>
+              <p>Bán hàng trên mọi thiết bị của bạn, mọi lúc mọi nơi</p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="why-card">
+              <div class="why-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h4>Tiện Nghi</h4>
+              <p>Giao diện trực quan, dễ dàng bán hàng cho mọi người</p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div class="why-card">
+              <div class="why-icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h4>Hỗ Trợ</h4>
+              <p>Hỗ trợ chi phí hóa đơn và dịch vụ thanh toán 24/7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">Ưu Đãi Khi Đăng Ký Gói</h2>
+            <p class="section-subtitle">
+              Nhận ngay những ưu đãi hấp dẫn khi đăng ký sử dụng POS ONE
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="zoom-in">
+            <div class="pricing-card">
+              <div class="pricing-header">
+                <h3>Gói Khuyến Mại Đặc Biệt</h3>
+                <div class="pricing-badge">HOT</div>
+              </div>
+
+              <div class="pricing-body">
+                <div class="offer-list">
+                  <div class="offer-item">
+                    <i class="fas fa-gift text-success"></i>
+                    <span>Tặng 300 hóa đơn điện tử</span>
+                  </div>
+                  <div class="offer-item">
+                    <i class="fas fa-calendar-plus text-success"></i>
+                    <span>Tặng thêm 06 tháng sử dụng phần mềm</span>
+                  </div>
+                  <div class="offer-item">
+                    <i class="fas fa-hands-helping text-success"></i>
+                    <span
+                      >Hỗ trợ đăng ký thanh toán, hóa đơn và chữ ký số miễn
+                      phí</span
+                    >
+                  </div>
+                </div>
+
+                <div class="pricing-cta">
+                  <a href="#register" class="btn btn-primary btn-lg">
+                    <i class="fas fa-rocket me-2"></i>Đăng Ký Ngay!
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">Triển Khai Nhanh Chóng</h2>
+            <p class="section-subtitle">
+              Bạn muốn triển khai ở đâu, POS ONE hỗ trợ bạn ở đó
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="flip-left"
+            data-aos-delay="100"
+          >
+            <div class="support-card">
+              <div class="support-icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h4>Tư Vấn Nghiệp Vụ</h4>
+              <p>
+                Tư vấn nghiệp vụ quản lý theo từng mô hình kinh doanh cụ thể
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="flip-left"
+            data-aos-delay="200"
+          >
+            <div class="support-card">
+              <div class="support-icon">
+                <i class="fas fa-file-signature"></i>
+              </div>
+              <h4>Đăng Ký Hóa Đơn</h4>
+              <p>Hỗ trợ đăng ký chữ ký số và hóa đơn điện tử theo nghị định</p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="flip-left"
+            data-aos-delay="300"
+          >
+            <div class="support-card">
+              <div class="support-icon">
+                <i class="fas fa-credit-card"></i>
+              </div>
+              <h4>Đăng Ký Thanh Toán</h4>
+              <p>Tư vấn dịch vụ và đăng ký hình thức thanh toán Online</p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="flip-left"
+            data-aos-delay="400"
+          >
+            <div class="support-card">
+              <div class="support-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h4>Hướng Dẫn & Đào Tạo</h4>
+              <p>Đào tạo nhanh chóng, bán hàng thành thạo trong 15 phút</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+            <h2 class="section-title">Những Con Số Ấn Tượng</h2>
+            <p class="section-subtitle">
+              Minh chứng cho hiệu quả & sự tin tưởng của khách hàng dành cho POS
+              ONE
+            </p>
+          </div>
+        </div>
+        <div class="stats-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-card">
+            <div class="stat-value counter" data-target="5000">0</div>
+            <div class="stat-label">Doanh nghiệp</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value counter" data-target="1200000">0</div>
+            <div class="stat-label">Giao dịch / tháng</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value counter" data-target="98">0</div>
+            <div class="stat-label">% Khách hài lòng</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value counter" data-target="15">0</div>
+            <div class="stat-label">Phút triển khai</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value counter" data-target="24">0</div>
+            <div class="stat-label">/7 Hỗ trợ</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+            <h2 class="section-title">Khách Hàng Nói Gì?</h2>
+            <p class="section-subtitle">
+              Trải nghiệm thực tế từ các mô hình F&B & bán lẻ
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-slider" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-item">
+            <div class="rating">★★★★★</div>
+            <p class="quote">
+              POS ONE giúp quán cà phê của tôi giảm 40% thời gian xử lý đơn &
+              kiểm kê chính xác hơn rất nhiều.
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/100?img=12" alt="user" />
+              <div><span>Minh Anh</span><br /><small>Chuỗi Cafe</small></div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="rating">★★★★★</div>
+            <p class="quote">
+              Triển khai cực nhanh, đội ngũ hỗ trợ nhiệt tình. Hệ thống báo cáo
+              realtime giúp tôi kiểm soát dễ dàng.
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/100?img=32" alt="user" />
+              <div>
+                <span>Quốc Thái</span><br /><small>Nhà hàng Fusion</small>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="rating">★★★★☆</div>
+            <p class="quote">
+              Giao diện thân thiện với nhân viên, giảm sai sót order & kết nối
+              thanh toán thuận tiện.
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/100?img=8" alt="user" />
+              <div>
+                <span>Lan Phương</span><br /><small>Chuỗi Trà Sữa</small>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="rating">★★★★★</div>
+            <p class="quote">
+              Tích hợp kho & hóa đơn điện tử giúp tôi tiết kiệm rất nhiều chi
+              phí vận hành.
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/100?img=18" alt="user" />
+              <div><span>Văn Lực</span><br /><small>Siêu thị mini</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section" id="partners">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+            <h2 class="section-title">Đối Tác Tích Hợp</h2>
+            <p class="section-subtitle">
+              Kết nối mạnh mẽ với hệ sinh thái thanh toán & dịch vụ
+            </p>
+          </div>
+        </div>
+        <div class="partners-logos" data-aos="fade-up" data-aos-delay="100">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/2a/VNPay_logo.svg"
+            alt="VNPAY"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Logo-MoMo.png"
+            alt="MoMo"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/3/39/Visa_Logo.png"
+            alt="Visa"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+            alt="Mastercard"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Napas_new_logo.svg"
+            alt="Napas"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/49/Stripe_Logo%2C_revised_2016.svg"
+            alt="Stripe"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+            <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+            <p class="section-subtitle">
+              Giải đáp nhanh các thắc mắc trước khi bạn bắt đầu
+            </p>
+          </div>
+        </div>
+        <div
+          class="accordion"
+          id="faqAccordion"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="f1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#c1"
+              >
+                POS ONE hỗ trợ mô hình nào?
+              </button>
+            </h2>
+            <div
+              id="c1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Nhà hàng, quán cà phê, bar, trà sữa, bán lẻ mini mart, food
+                court, kiosk và chuỗi đa chi nhánh.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="f2">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#c2"
+              >
+                Có dùng được trên nhiều thiết bị?
+              </button>
+            </h2>
+            <div
+              id="c2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Có. Web app & mobile app chạy trên Smartphone, Tablet, Desktop &
+                SmartPOS.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="f3">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#c3"
+              >
+                Dữ liệu có an toàn?
+              </button>
+            </h2>
+            <div
+              id="c3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Hệ thống mã hóa truyền tải SSL, sao lưu định kỳ & phân quyền
+                chặt chẽ.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="f4">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#c4"
+              >
+                Thời gian triển khai bao lâu?
+              </button>
+            </h2>
+            <div
+              id="c4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Thông thường 15 phút đến vài giờ tùy quy mô & số lượng thiết bị.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="cta-band" data-aos="zoom-in">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <h2>Tăng Tốc Vận Hành Hôm Nay</h2>
+              <p>
+                Tối ưu chi phí – Quản trị tập trung – Mở rộng dễ dàng. Trải
+                nghiệm miễn phí & nhận ưu đãi triển khai.
+              </p>
+              <div class="d-flex flex-wrap gap-3 mt-3">
+                <a href="#register" class="btn btn-light text-dark px-4 py-2"
+                  ><i class="fa-solid fa-rocket me-2"></i>Dùng Thử Ngay</a
+                >
+                <a href="#contact" class="btn btn-outline-light px-4 py-2"
+                  ><i class="fa-solid fa-phone me-2"></i>Tư Vấn</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-5 text-lg-end mt-4 mt-lg-0">
+              <ul class="list-unstyled text-white small mb-0 d-grid gap-2">
+                <li>
+                  <i class="fa-solid fa-check-circle me-2"></i>Không cần cài đặt
+                  phức tạp
+                </li>
+                <li>
+                  <i class="fa-solid fa-check-circle me-2"></i>Bảo mật & sao lưu
+                  tự động
+                </li>
+                <li>
+                  <i class="fa-solid fa-check-circle me-2"></i>Nâng cấp liên tục
+                  miễn phí
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="contact-info">
+              <h2 class="section-title">Liên Hệ Với Chúng Tôi</h2>
+              <p class="mb-4">
+                Hãy liên hệ với chúng tôi để được tư vấn và hỗ trợ tốt nhất
+              </p>
+
+              <div class="contact-item">
+                <i class="fas fa-building text-primary"></i>
+                <div>
+                  <h5>Công ty Cổ Phần Công Nghệ KAS</h5>
+                  <p>
+                    199 Đường Nguyễn Hoàng, Phường An Phú, Thành Phố Thủ Đức,
+                    TP.HCM
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-phone text-primary"></i>
+                <div>
+                  <h5>Hotline</h5>
+                  <p>1900 2137</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-envelope text-primary"></i>
+                <div>
+                  <h5>Email</h5>
+                  <p>kas@kas.asia</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-globe text-primary"></i>
+                <div>
+                  <h5>Website</h5>
+                  <p>kas.asia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Họ và Tên"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Số Điện Thoại"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <select class="form-select" required>
+                      <option value="">Chọn dịch vụ quan tâm</option>
+                      <option value="pos">Phần mềm POS</option>
+                      <option value="invoice">Hóa đơn điện tử</option>
+                      <option value="payment">Thanh toán online</option>
+                      <option value="consultation">Tư vấn</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      class="form-control"
+                      rows="4"
+                      placeholder="Tin nhắn của bạn"
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                      <i class="fas fa-paper-plane me-2"></i>Gửi Tin Nhắn
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="footer-content">
+              <img
+                src="https://posone.ai/wp-content/uploads/2025/06/One-Green-no-backg-1-768x546.png"
+                alt="POS ONE"
+                height="60"
+                class="mb-3"
+              />
+              <p>
+                &copy; 2025 POS ONE. Phát triển bởi Công ty Cổ Phần Công Nghệ
+                KAS. All rights reserved.
+              </p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top-btn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Registration Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Đăng Ký Sử Dụng POS ONE</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="registerForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Tên doanh nghiệp *</label>
+                  <input type="text" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Người đại diện *</label>
+                  <input type="text" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Email *</label>
+                  <input type="email" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Số điện thoại *</label>
+                  <input type="tel" class="form-control" required />
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Địa chỉ</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Loại hình kinh doanh</label>
+                  <select class="form-select">
+                    <option value="">Chọn loại hình</option>
+                    <option value="restaurant">Nhà hàng</option>
+                    <option value="cafe">Quán cà phê</option>
+                    <option value="retail">Bán lẻ</option>
+                    <option value="other">Khác</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Quy mô</label>
+                  <select class="form-select">
+                    <option value="">Chọn quy mô</option>
+                    <option value="small">1-5 nhân viên</option>
+                    <option value="medium">6-20 nhân viên</option>
+                    <option value="large">Trên 20 nhân viên</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Hủy
+            </button>
+            <button type="submit" form="registerForm" class="btn btn-primary">
+              Đăng Ký Ngay
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <script>
+      // Theme toggle
+      const themeBtn = document.getElementById("themeToggle");
+      const root = document.documentElement;
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        root.setAttribute("data-theme", savedTheme);
+        updateThemeIcon(savedTheme);
+      }
+      themeBtn?.addEventListener("click", () => {
+        const current =
+          root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", current);
+        localStorage.setItem("theme", current);
+        updateThemeIcon(current);
+      });
+      function updateThemeIcon(mode) {
+        const icon = themeBtn.querySelector("i");
+        const label = themeBtn.querySelector("span");
+        if (mode === "dark") {
+          icon.className = "fa-solid fa-sun";
+          label.textContent = "Light";
+        } else {
+          icon.className = "fa-solid fa-moon";
+          label.textContent = "Dark";
+        }
+      }
+    </script>
+  </body>
+</html>
